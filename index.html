@@ -18,8 +18,7 @@
 .dropbtn {
     background-color: gray;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 2px;
     border: none;
     cursor: pointer;
     border-radius: 20px;
@@ -162,7 +161,7 @@ function changePage(num_in)
 		document.getElementById('content').style.display = 'block';
 		document.getElementsByClassName('video-hero')[0].style.display = 'none';
     	document.getElementById('section_title').src = "about_title.png"
-    	document.getElementById('section_content').innerHTML = "Hi, I’m Liz Gentile. I graduated in May of 2017 from the University of Michigan with a degree in Computer Science Engineering. Since graduation I have spent my time both traveling throughout Europe and also as a teacher at the summer immersion program for Girls Who Code at Facebook. My responsibilities as a teacher include not only teaching computer science concepts but keeping high school students focused and motivated for the duration of the 7-week program. This opportunity has strengthened both my foundations in computer science and expanded my leadership and communication skills. I look forward to taking these new skills and my passion for educating and inspiring women in technology as I go forward in my career.";
+    	document.getElementById('section_content').innerHTML = "Hi, I’m Liz Gentile. I graduated in May of 2017 from the University of Michigan with a degree in Computer Science Engineering. Since graduation I have spent my time  traveling throughout Europe and teachering at the summer immersion program for Girls Who Code at Facebook. My responsibilities as a teacher include not only teaching computer science concepts but keeping high school students focused and motivated for the duration of the 7-week program. This opportunity has strengthened both my foundations in computer science and expanded my leadership and communication skills. I look forward to taking these new skills and my passion for educating and inspiring women in technology as I go forward in my career. I am actively seeking both product manager and software engineering roles.";
 		document.getElementById('placehere').style.display = 'block';
 		document.getElementById('resume').style.display = 'none';
 
@@ -200,21 +199,12 @@ function changePage(num_in)
 
 
 		<div class="dropdown">
-		  <button onclick="myFunction()" class="dropbtn" style ="
-    width: 170px;">NAVIGATION</button>
+		 <img src="nav.png" style="height: 50px;" onclick="myFunction()" class="dropbtn">
 		  <div id="myDropdown" class="dropdown-content">
-				<img style="height: 35px; width: 150px; 
-    margin-left: 10px;
-    margin-top: 5px;" src='b_home.png' onclick="changePage(1)">
-				<img style="height: 35px; width: 150px;
-    margin-left: 10px;
-    margin-top: 5px;" src='b_about.png' onclick="changePage(2)" >
-				<img style="height: 35px; width: 150px;
-    margin-left: 10px;
-    margin-top: 5px;" src='b_resume.png' onclick="changePage(3)">
-				<img style="height: 35px; width: 150px;
-    margin-left: 10px;
-    margin-top: 5px;" src='b_projects.png' onclick="changePage(4)">
+		  <h3 onclick="changePage(1)" style="text-align:center">HOME</h3>
+		  <h3 onclick="changePage(2)" style="text-align:center">ABOUT</h3>
+		  <h3 onclick="changePage(3)" style="text-align:center">RESUME</h3>
+		  <h3 onclick="changePage(4)" style="text-align:center">PROJECTS</h3>
 		  </div>
 		</div>
 
