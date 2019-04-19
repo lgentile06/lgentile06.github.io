@@ -113,6 +113,13 @@ h2:hover
 	color: white;
 
 }
+.title-header:hover{
+	-webkit-transition: transform 2s ease-in-out;
+	font-size: 23px;
+	-webkit-text-stroke-color: white;
+    text-transform: uppercase;
+	color: white;
+}
 .cnt
 {
 	margin-right: 15px;
@@ -227,9 +234,9 @@ function changePage(num_in)
 <div id="header">
 	<div class="page-width">
 		<div style="display: flex;">
-		  <h3 onclick="changePage(1)" style="text-align:center; cursor: pointer; margin-right: 20px;">HOME</h3>
-		<h3 onclick="changePage(4)" style="text-align:center;cursor: pointer; margin-right: 20px;">PROJECTS</h3>
-		  <h3 onclick="changePage(3)" style="text-align:center;cursor: pointer; margin-right: 20px;">RESUME</h3>
+		  <h3 class="title-header" onclick="changePage(1)" style="text-align:center; cursor: pointer; margin-right: 20px;">HOME</h3>
+		<h3 class="title-header" onclick="changePage(4)" style="text-align:center;cursor: pointer; margin-right: 20px;">PROJECTS</h3>
+		  <h3 class="title-header" onclick="changePage(3)" style="text-align:center;cursor: pointer; margin-right: 20px;">RESUME</h3>
 		</div>
 	</div>
 </div>
