@@ -113,6 +113,13 @@ h2:hover
 	color: white;
 
 }
+.project-header:hover {
+	-webkit-transition: transform 2s ease-in-out;
+	font-size: 21px;
+	-webkit-text-stroke-color: #000000db;
+    text-transform: uppercase;
+	color: #000000db;
+}
 .title-header {
 	text-align:center;
 	cursor: pointer;
@@ -277,7 +284,7 @@ function changePage(num_in)
 	<div id ="projects_section" style="display: none">
 
 		<div class="p2" onclick ="showSafeSteps()">
-			<h3 style="cursor: pointer;">SafeSteps iOS App</h3>
+			<h3 class="project-header" style="cursor: pointer;">SafeSteps iOS App</h3>
 			<p>A mobile application to find the most direct and safe walking route.</p>
 			<div id ="p2_content" style="display: none;">
 			<h4>Type: Personal Project</h4>
@@ -298,7 +305,7 @@ function changePage(num_in)
 			</div>
 		</div>	
 		<div class="p1" onclick ="showWiki()">
-			<h2 style="cursor: pointer;">Wikipedia Search Engine</h2>
+			<h3 class="project-header" style="cursor: pointer;">Wikipedia Search Engine</h3>
 			<p>Web search engine built using MapReduce based indexer to process large dataset.</p>
 		<div id ="p1_content" style="display: none;">
 			<h4>Type: School Project -- Web Database and Information Systems</h4>
@@ -313,7 +320,7 @@ function changePage(num_in)
 		</div>
 		
 		<div class="p3" onclick ="showRemambo()">
-			<h2 style="cursor: pointer;">Remambo Speech Recognition iOS App</h2>
+			<h3 class="project-header" style="cursor: pointer;">Remambo Speech Recognition iOS App</h3>
 			<p>A organizational mobile web application designed specifically for vision impaired individuals.</p>
 		<div id ="p3_content" style="display: none;">
 			<h4>Type: School Project -- Software Engineering</h4>
